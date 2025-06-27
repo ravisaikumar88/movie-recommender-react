@@ -1,0 +1,45 @@
+.movie-card {
+  display: flex;
+  gap: 15px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+}
+
+.movie-card img {
+  border-radius: 8px;
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.no-image {
+  width: 100px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #666;
+}
+
+.badge {
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  padding: 4px 8px;
+  background-color: #eee;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.badge.rating {
+  background-color: #ffd700;
+}
+
+.badge.genre {
+  background-color: #d1ecf1;
+}
