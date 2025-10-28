@@ -35,8 +35,9 @@ def rag(query: str):
     return search_movies(query)
 
 @app.get("/api/trending")
-def trending(language: str = "en"):
-    return get_trending_movies(original_lang=language)
+def trending(language: str = "en-US"):
+    return get_trending_movies(language)
+
 
 @app.get("/api/genres")
 def get_genres():
